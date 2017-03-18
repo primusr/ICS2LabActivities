@@ -1,0 +1,128 @@
+3.4
+input starting number: 5
+input ending number : 9
+sum = 21
+
+4.1
+input starting number: 5
+input ending number : 9
+sum = 21
+
+5.1
+input starting number: 5
+input ending number : 9
+sum = 21.
+
+6.The main objective of the program is to add all even numbers from the start input number to the end input number.
+
+
+7.
+a) while Loop
+b) for Loop
+c) do-while Loop
+
+8.
+a) while loop
+The body of the loop or statements under the while-loop will be
+repeatedly executed while the condition is TRUE. Otherwise, the loop will
+terminate and the next statement after the end of the while loop will be
+executed next.
+
+b)for loop
+The for-loop is actually a “more compact” form of the while loop. The
+loop is executed as follows:
+1. Perform the initialization
+2. Check the condition
+3. If the condition results to a TRUE value, the statement/s inside the forloop
+(body) will be executed. Else proceed to #6
+4. Change of state
+5. Goes back to #2.
+6. Exit the loop and the statement after the end of the for-loop will be
+executed. 
+
+c)do-while loop
+The Do-While is executed as follows:
+1. Performs the initialization.
+2. Performs the body of the loop
+3. Change of state
+4. Checks the condition. If the condition results to a TRUE value, the
+statement/s inside the do-while Loop (body) will be executed until
+condition will be FALSE.
+5. If condition is FALSE, exit the loop and the statement after the end of
+the do-while Loop will be executed.
+
+9.
+the difference between these loops are how to input the count of loops or the codes for the loops.
+
+10.4
+(FOR LOoP)
+import java.io.*;
+public class start{
+ 	public static void main(String[] args){
+		int i, k;
+		char again;
+		String input = "";
+ 		
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		
+		for(i=1;1<=10;i++){
+			for(k=1;k<=10;k++){
+				System.out.println(k);
+				++k;
+		}
+		System.out.println("Do you want to try again? y/n");
+		
+
+		try{
+ 		input = in.readLine();
+ 		}catch(IOException e){}
+		again = input.charAt(0);{
+		}while(again == 'Y' || again == 'y');
+	}		
+}
+} 
+
+(DO-WHILE LOOP)
+
+
+(WHILE LOOP)
+import java.io.*;
+public class while{
+	public static void main(String[] args){
+		int start = 0, end = 0, step = 0 , sum;
+		int counter = 0;
+		String input = "";
+
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+		try{
+		System.out.println("Input start Number: ");
+		input = in.readLine();
+		start = Integer.parseInt(input);
+
+		System.out.println("Input end Number: ");
+		input = in.readLine();
+		end = Integer.parseInt(input);
+
+		System.out.println("Input step Number: ");
+		input = in.readLine();
+		step = Integer.parseInt(input);
+
+		}catch(IOException e){
+		System.out.println("Error!");
+		}
+
+		
+		while(counter <= 5);
+		{
+		System.out.println(start);
+		counter++;
+		start = start + step;
+
+			if(counter<=5)
+				{
+				Start = start + step;
+				}
+		}	
+	}
+}

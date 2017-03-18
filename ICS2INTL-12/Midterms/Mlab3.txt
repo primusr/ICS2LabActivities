@@ -1,0 +1,88 @@
+MLab3
+
+3.4.
+C:\myJavaProgs>java Sum1
+Input starting number: 1
+Input ending number: 100
+Sum = 2500
+
+4.1.
+C:\myJavaProgs>java Sum2
+Input starting number: 1
+Input ending number: 100
+Sum = 2500
+
+5.1.
+C:\myJavaProgs>java Sum3
+Input starting number: 1
+Input ending number: 100
+Sum = 2500
+
+6. To know the difference between while, for and do loop.
+
+7.
+while loop
+for loop
+do-while loop
+
+8.
+a.initialization of variable or of several variables
+b.Condition, the condition check is usually made on the current value of the variable in (1) above.
+c.Body of the loop which maybe a single statement or a group of statements.
+d. A change of state which is usually a statement inside the body of the loop that changes the contents of the variables.
+
+9.The difference among these identified loop constructions is that they dont follow the arrangement of the identified loop.
+
+10.4
+// do-while loop
+
+/* Programmed by: Manalo, Ronmar M.
+   Program title: Ses.java
+   Program Date: 2/28/2017 */
+
+import java.io.*;
+public class Ses{
+  public static void main(String[] args){
+	int start = 0, end = 0, step = 0;
+	String in = " ";
+
+	BufferedReader input = new BufferedReader(new
+			      InputStreamReader(System.in));
+	do{
+	try{
+	  System.out.print("Input START value = ");
+	  in = input.readLine();
+	  start = Integer.parseInt(in);
+	  System.out.print("Input END value = ");
+	  in = input.readLine();
+	  end = Integer.parseInt(in);
+	  System.out.print("Input STEP value = ");
+	  in = input.readLine();
+	  step = Integer.parseInt(in);
+	}catch(IOException e){
+	  System.out.println("Error!");
+	}
+	if(start >= end){
+	  System.out.print("Starting number should be lesser than the ending number");
+	  System.exit(0);
+	}else
+	if(step<=0){
+	  System.out.println("The step number should always be greater than zero.");
+	  System.exit(0);
+	}
+
+	for(start = start;start <= end;start = start + step){
+	  System.out.println(start);
+
+	}
+	
+	try{
+	  System.out.println("\nDo you want to try again (Y/N)?");
+	  in = input.readLine();
+	}catch(IOException e){
+	  System.out.println("Error!");
+	}
+      }while(in.equalsIgnoreCase("Y"));
+    }
+}
+	

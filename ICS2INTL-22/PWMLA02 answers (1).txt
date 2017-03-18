@@ -1,0 +1,106 @@
+Answers
+3.4)
+Input a number from 1 to 7
+4
+That day is a Thursday!
+Have a nice day!
+
+4.2)
+Input a number from 1 to 7: 9
+Invalid Input!!!
+
+4.3)
+The day is a Tuesday!
+the day is a wednesday!
+Have a nice day.
+
+it went to the next case without stopping
+
+4.5)
+no
+yes
+
+4.6)
+yes
+no
+
+5.3)
+the switch-case statement
+
+Quarter.java(swith-case)
+
+import java.io.*;
+public class Days{
+	public static void main (String args []){
+		int month;
+		String input = "";
+		
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("Input a number from 1 to 12: ");
+		
+		try{
+			input = in.readLine();
+		}catch(IOException e){
+		}
+		
+		month = Integer.parseInt(input);
+		
+		switch(month){
+		case 1 : 
+		case 2 : 
+		case 3 : System.out.println("1st quarter");
+				 break;
+		case 4 :
+		case 5 : 
+		case 6 : System.out.println("2nd quarter");
+				 break;
+		case 7 : 
+		case 8 :
+		case 9 : System.out.println("3rd quarter");
+				 break;
+		case 10 :
+		case 11 :
+		case 12 : System.out.println("4th quarter");
+				 break;
+				 default: System.out.println("Invalid input!!!");
+		}
+	}
+}
+
+
+Quarter (if-else)
+
+
+import java.io.*;
+public class Days{
+	public static void main (String args []){
+		int month;
+		String input = "";
+		
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("Input a number from 1 to 12: ");
+		
+		try{
+			input = in.readLine();
+		}catch(IOException e){
+		}
+		
+		month = Integer.parseInt(input);
+		
+		if(month == 1 || month == 2 || month ==3){
+			System.out.println("1st Quarter");
+		}else if(month == 4 || month == 5 || month == 6){
+			System.out.println("2nd Quarter");
+		}else if(month == 7 || month == 8 || month == 9){
+			System.out.println("3rd Quarter");
+		}else if(month == 10 || month == 11 || month == 12){
+			System.out.println("4th Quarter");
+		}else{
+			System.out.println("invalid input!!!");
+		}
+	}
+}
+
+
+
+

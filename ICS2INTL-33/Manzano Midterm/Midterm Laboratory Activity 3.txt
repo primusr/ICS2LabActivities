@@ -1,0 +1,45 @@
+Alejandro Manzano III
+ICS2 6:45 - 8:00
+
+Midterm Laboratory Activity 3
+
+3.4.
+	Input starting number: 1
+	Input ending number: 5
+	Sum = 9
+
+4.1
+	Input starting number: 1
+	Input ending number: 5
+	Sum = 9
+
+5.1
+	Input starting number: 1
+	Input ending number: 5
+	Sum = 9
+
+6
+	These programs are used to do repeated task or anything that needs to be parsed from start to end 
+
+7
+	while loop
+	Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.
+
+	for loop
+	Execute a sequence of statements multiple times and abbreviates the code that manages the loop variable.
+
+	do...while loop
+	Like a while statement, except that it tests the condition at the end of the loop body.
+
+8.
+	The while and do/while loops both follow the same basic flowchart. The only exception is that:
+	In a while loop, the expression is tested first
+	In a do/while loop, the loop "body" is executed first
+
+9
+	The do while loop executes the content of the loop once before checking the condition of the while.
+	A while loop will check the condition first before executing the content.
+10
+
+10.4
+

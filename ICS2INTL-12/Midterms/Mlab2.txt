@@ -1,0 +1,124 @@
+3.4.
+C:\myJavaProgs>java Days
+Input a number from 1 to 7:3
+The day is a wednesday!
+Have a nice day.
+
+4.2.
+C:\myJavaProgs>java Days
+Input a number from 1 to 7:8
+Invalid input!!!
+Have a nice day.
+
+4.3.
+C:\myJavaProgs>java Days
+Input a number from 1 to 7:2
+The day is Tuesday!
+The day is Wednesday!
+Have a nice day.
+
+it continously implementing the code unless you put the break statement.
+
+4.5.
+yes
+no
+
+4.6.
+yes
+yes, the case values matter where you put it.
+
+5.3.
+The switch-case is easier to be written in a code,
+while if-else statement is easier to implement,
+both are easy to understand.
+
+
+
+//switch case
+
+import java.io.*;
+public class Quarter{
+  public static void main(String[] args){
+	int month;
+	String input = "";
+
+	BufferedReader in = new BufferedReader(new
+				InputStreamReader(System.in));
+	
+	System.out.print("Input a number from 1 to 12: ");
+	try{
+	  input = in.readLine();
+	}catch(IOException e){
+	  System.out.println("Error!");
+	}
+	
+	month = Integer.parseInt(input);
+	
+	switch(month){
+	case 1 : 
+	case 2 :
+	case 3 : System.out.println("First Quarter");
+		 break;
+	case 4 : 
+	case 5 :
+	case 6 : System.out.println("Second Quarter");
+		 break;
+	case 7 : 
+	case 8 : 
+	case 9 : System.out.println("Third Quarter");
+		 break;
+	case 10 : 
+	case 11 :
+	case 12 : System.out.println("Fourth Quarter");
+		  break;
+	}
+	System.out.println("Have a nice day.");
+     }
+}
+
+
+
+
+
+//if-else
+
+import java.io.*;
+public class QuarterIf{
+  public static void main(String[] args){
+	int month;
+	String input = "";
+
+	BufferedReader in = new BufferedReader(new
+				InputStreamReader(System.in));
+	
+	System.out.print("Input a number from 1 to 12: ");
+	try{
+	  input = in.readLine();
+	}catch(IOException e){
+	  System.out.println("Error!");
+	}
+	
+	month = Integer.parseInt(input);
+	
+	if(month >= 1 && month <= 3)
+	{
+	   System.out.println("First Quarter");
+	}
+	else if(month >= 4 && month <= 6)
+	{
+	   System.out.println("Second Quarter");
+	}
+	else if(month >= 7 && month <= 9)
+	{
+	   System.out.println("Third Quarter");
+	}
+	else if(month >= 10 && month <=12)
+	{
+	   System.out.println("Fourth Quarter");
+	}
+	else
+	{
+	   System.out.println("Invalid");
+	}
+      }
+}

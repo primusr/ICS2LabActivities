@@ -1,0 +1,154 @@
+PWMLA04
+
+3.4
+Input integer number: 1
+Input integer number: 2
+Input integer number: 3
+Input integer number: 4
+Input integer number: 5
+Input integer number: 6
+Input integer number: 7
+Input integer number: 8
+Input integer number: 9
+Input integer number: 10
+
+3.5
+
+The number of how many times I input an integer number.
+
+4.1 import java.util.*;
+public scanner console = new scanner(System.in);
+static final int N = 10;
+public static void main (String[] args){
+	int counter;
+	int number;
+	int zero = 0;
+	int odds = 0;
+	int even = 0;
+
+	System.out.println(Please enter" + N" integers, positive, "+ "negative or zeros,");
+	for (counter = 1; counter <=N; counter++){
+	number = console.nextInt();
+	System.out.print(number + ");
+
+	switch(number%2){
+	case 0l
+	
+	even++;
+	if(number == 0)
+		zeros++;
+	break;
+	
+	case1;
+	case -1; 
+		odds++;
+
+	}
+}
+	System.out.println();
+	System.out.println ("There are" + even + "even, " + "which also includes" + zeros + "zeros");
+	System.out.println("Total number of odd is; " + odds);
+
+	}
+}
+
+
+4.4 C:\myJavaProgs> java Count2
+
+Please enter 10 integers, positivem negative, or zeros
+1
+1. 2
+2. 3
+3. 4
+4. 5
+5. 6
+6. 7
+7. 8
+8. 9
+9. 18
+18
+
+There are 5 even, which also includes 0 zeros
+Total number of odd is: 5
+
+5.4
+
+Input integer number: 4
+Input integer number: 4
+Input integer number: 4
+Input integer number: 4
+Input integer number: 4
+Input integer number: 4
+Input integer number: 4
+Input integer number: 4
+Input integer number: 4
+Input integer number: 4
+The sum of the integers is 40
+
+
+5.5  The sum of all the integers being encoded.
+
+6.1
+import java.util.*;
+public class Accum2{
+	static scanner console = new Scanner(System.in);
+	static final int N =  10;
+	public static void main (String [] args){
+		int counter;
+		int number;
+		int zeros = 0;
+		int odds = 0;
+		int even = 0;
+		int sumeven = 0;
+		int sumodd = 0;
+		String input - "";
+	
+System.out.println("Please enter" + N + " integers, positive, " + "negative, or zeros.");
+		for (counter = 1; counter <=N; counter++){
+
+
+
+
+
+
+
+
+
+6.4
+Please enter 10 integers, positive, negative, or zeros.
+10
+10 The sum of even numbers are: 10
+12
+12 The sum of even numbers are: 22
+13
+13 The sum of odd numbers are: 13 
+14
+14 The sum of even numbers are: 36
+15
+15 The sum of odd numbers are: 28
+27
+27 The sum of odd numbers are: 55
+30
+30 The sum of even numbers are: 56
+17
+17 The sum of odd numbers are: 72
+45
+45 The sum of even numbers are: 117
+34
+34 The sum of odd numbers are: 90
+
+There are 5 even, which also includes 0 zeros
+Total number of odd is: 5
+
+6.5
+
+
+		
+
+
+
+
+
+
+
+

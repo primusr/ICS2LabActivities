@@ -1,0 +1,79 @@
+PWMLA03
+
+3.4 
+Input starting number: 5
+Input ending number: 7
+Sum = 12
+
+4.1
+Input starting number: 5
+Input ending number: 7
+Sum = 12
+
+5.1
+Input starting number: 5
+Input ending number: 7
+Sum = 12
+
+
+6. The main objective of these programs is to test if there is differences in while, for and do loop.
+ 
+7.while Loop
+  for loop
+  do-while loop
+
+8. Counter is a variable that is being used to keep on tracking the count of a certain group of items. Sometimes its data is an integer, which is initialized to a value of zero 0 and incremented by 1 inside a loop.
+
+9. Checking the condition. If the condition results to a TRUE value, the statement insde the do-while loop will be executed until the condition says FALSE, and if the condition is FALSE, exit the loop and the statement after the end of the do-while loop will be executed.
+The for-loop is known as a "more compact" form of the while loop.
+
+10.3 (FOR LOOP)
+import java.io.;
+public class Start{
+public static void main (String[] args){
+	int i, k;
+	char again;
+	String input = "";
+	
+	BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+	for(i=1;i<=10;i+2){
+	    for(k=1;k<=10;k+2){
+		System.out.println(k);
+	}
+	System.out.println("Do you want to try again? (Y/N) ");
+	try{
+	input = in.readLine();
+	}catch(IOException e){}
+	again = input.charAt(0);{
+	}while(again == 'Y' || again == 'y');
+
+ }
+}
+}
+
+import java.io.;
+public class Start{
+public static void main (String[] args){
+	int i, k;
+	char again;
+	String input = "";
+	
+	BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+	for(i=1;i<=10;i+5){
+	    for(k=1;k<=10;k+5){
+		System.out.println(k);
+	}
+	System.out.println("Do you want to try again? (Y/N) ");
+	try{
+	input = in.readLine();
+	}catch(IOException e){}
+	again = input.charAt(0);{
+	}while(again == 'Y' || again == 'y');
+
+ }
+}
+}
+
+DO LOOP

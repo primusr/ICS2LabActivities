@@ -1,0 +1,172 @@
+3.4)
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+the total value for Counter is 10
+
+
+3.5)
+it only counts positive integers
+
+
+4.1)
+import java.io.*;
+public class Count{
+	public static void main(String args[]){
+	int i, n, odd, even;
+	String input= "";
+	odd = 0 ;
+	even = 0 ;
+	BufferedReader in = new BufferedReader (new InputStreamReader(System.in));
+	
+	for (i = 1 ; i<=10; i++){
+		System.out.print("Input Integer Number: ") ;
+		try{
+			input = in.readLine();
+		}catch(IOException e){
+			System.out.println(" Error !!!");
+		}
+		n = Integer.parseInt(input);
+		
+		if(n % 2 != 0){
+			odd = odd + 1;
+		}else{
+			even = even + 1;
+		}
+		}
+		System.out.println("The Total Value for even is " + odd);
+		System.out.println("The total value for odd is " + even);
+		
+	}
+}	
+
+4.4)
+
+
+
+Input integer Number:
+1
+Input integer Number:
+2
+Input integer Number:
+3
+Input integer Number:
+4
+Input integer Number:
+5
+Input integer Number:
+6
+Input integer Number:
+7
+Input integer Number:
+8
+Input integer Number:
+9
+Input integer Number:
+10
+the total value for Odd is: 5
+the total value for even is: 5
+
+4.5)
+to count values for specific algorithms
+
+
+5.4)
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+Input integer Number:
+1
+the sum of the integers is: 10
+
+5.5)
+integers
+
+6.1)
+import java.io.*;
+public class Accum2{
+public static void main(String[] args){
+	int i = 0;
+	int n = 0;
+	int osum = 0;
+	int esum = 0;
+	int even = 0;
+	int odd = 0;
+	String input = "";
+	BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+	
+	for(i = 0; i < 10; i++){
+		System.out.print("Input integer number: ");
+		try{
+			input = in.readLine();
+		}catch(IOException e){
+			System.out.println("Error!");
+		}
+		
+		n = Integer.parseInt(input);
+			if(n % 2 == 0){
+				esum = esum + n;
+			}else{
+				osum = osum + n;
+			}
+		}
+		System.out.println("the sum of all even numbers are: " + esum);
+		System.out.println("the sum of all odd numbers are: " + osum);
+	}
+}	
+	
+6.4)
+Input integer number: 1
+Input integer number: 2
+Input integer number: 21
+Input integer number: 1
+Input integer number: 1
+Input integer number: 2
+Input integer number: 2
+Input integer number: 21
+Input integer number: 1
+Input integer number: 2
+the sum of all even numbers are: 8
+the sum of all odd numbers are: 46
+
+6.5)
+to filter certain values in a group of values, and thus can apply a certain algorithm after.
+	
+7)
+counters count certain types of values while accumulators differentiate types of values then apply an algorithm later on.
+
+
+
+

@@ -1,0 +1,101 @@
+Michael L. Dacyas
+ICS2
+PWMLA02
+
+3.4]Input a number from 1 to 7: 1
+    The day is a Monday!
+    Have a nice day.
+
+4.2]Input a number from 1 to 7: 1
+    The day is a Monday!
+    Invalid input!!!
+
+4.3]Input a number from 1 to 7: 2
+    Invalid input!!!
+
+The effect of removing the break statement is it will not cause the program to "break" or "jump" out of the switch statement,and not to execute the next statement following switch statement.
+
+4.5]YES
+    NO
+
+4.6]NO
+    YES
+
+5.3]Switch-case statement is the better terms in writability(the ease of writing the codes) and in terms of readability (the ease of understanding the codes) because it is clearly know what are possible values for the condition variable.
+
+
+QUARTER.JAVA [SWITCH-CASE]
+import java.io.*;
+public class Quarter{
+public static void main(String[] args){
+int month;
+String input ="";
+BufferedReader in = new BufferedReader(new
+InputStreamReader(System.in));
+System.out.print("Input a number from 1 to 12: ");
+try{
+input=in.readLine();
+}catch(IOException e){
+System.out.println(“Error!”);
+}
+month=Integer.parseInt(input);
+switch(month){
+case 1:
+case 2:
+case 3:
+System.out.println("1st Quarter");
+break;
+case 4:
+case 5:
+case 6:
+System.out.println("2nd Quarter");
+break;
+case 7:
+case 8:
+case 9:
+System.out.println("3rd Quarter");
+break;
+case 10:
+case 11:
+case 12:
+System.out.println("4th Quarter");
+break;
+default: System.out.println("Error!");
+}
+}
+
+
+QUARTER.JAVA [IF-ELSE]
+public class Quarter{
+public static void main(String[] args){
+int month;
+String input ="";
+BufferedReader in = new BufferedReader(new
+InputStreamReader(System.in));
+System.out.print("Input a number from 1 to 12: ");
+try{
+input=in.readLine();
+}catch(IOException e){
+System.out.println(“Error!”);
+}
+month=Integer.parseInt(input);
+if(day>=1 && day<=3){
+System.out.println("1st Quarter");
+}else
+if(day>=4 && day<=6){
+System.out.println("2nd Quarter");
+}else
+if(day>=7 && day<=9){
+System.out.println("3rd Quarter");
+}else
+if(day>101 && day<=12){
+System.out.println("4th Quarter");
+}else
+System.out.println("Error");
+}
+}
+
+
+
+
+

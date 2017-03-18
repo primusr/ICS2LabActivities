@@ -1,0 +1,32 @@
+C:\may java>javac Count.java
+
+C:\may java>java Count
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+Input integer number: 5
+Input integer number: 5
+Input integer number: 5
+Input integer number: 7
+Input integer number: 7
+Input integer number: 7
+Input integer number: 2
+The total value for counter is 10
+
+
+
+
+C:\may java>javac Count2.java
+
+C:\may java>java Count
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+The total value for counter is 10

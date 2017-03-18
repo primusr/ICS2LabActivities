@@ -1,0 +1,107 @@
+3.4
+
+Input a number from 1 to 7: 5
+The day is a Friday!
+Have a nice day.
+
+**
+
+4.2 
+
+Input a number from 1 to 7: 90
+Invalid input!!!
+Have a nice day.
+
+**
+
+4.3
+
+Input a number from 1 to 7: 2
+The day is a Tuesday!
+The day is a Wednesday!
+Have a nice day.
+
+EFFECT OF REMOVING THE BREAK STATEMENT:
+The program continues to do the statements for the next case in the switch statement. In this case, it continues to do the statements for case 3 which is to print "The day is a Wednesday!". Thus, it shows two outputs.
+
+***
+
+4.5
+
+Did your program behave normally? No.
+Does it really matter where you place default? Yes
+
+**
+
+4.6
+
+Did your program behave normally? No.
+Is there any effect on the program behavior? Yes
+
+**
+
+5.3
+	
+In terms of writability, the cascading if-else statement is better since the statements are shorter are compared to switch statement. However, in terms of readability, the switch statement is better. As opposed to if-else statement, the switch statement can be easily understood because of its format. Additionally, the if-else statements are much complex to be read and understood since it uses a lot of conditional operators like || or ==.
+
+
+** SWITCH STATEMENTS **
+
+import java.util.*;
+
+public class Quarter{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		System.out.print("Enter an integer value from 1 to 12: ");
+		int month = in.nextInt();
+
+		switch(month){
+
+			case 1:
+			case 2:
+			case 3:	System.out.println("1st Quarter");
+				break;
+
+			case 4:
+			case 5:
+			case 6:	System.out.println("2nd Quarter");
+				break;
+
+			case 7:
+			case 8:
+			case 9:	System.out.println("3rd Quarter");
+				break;
+
+			case 10:
+			case 11:
+			case 12: System.out.println("4th Quarter");
+				 break;
+
+		}
+	}	
+}
+
+** CASCADING IF-ELSE STATEMENTS **
+
+import java.util.*;
+
+public class Quarter{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		System.out.print("Enter an integer value from 1 to 12: ");
+		int month = in.nextInt();
+
+		if (month == 1 || month == 2 || month == 3)
+			System.out.println("1st Quarter");
+
+		else if (month == 4 || month == 5 || month == 6)
+			System.out.println("2nd Quarter");
+
+		else if (month == 7 || month == 8 || month == 9)
+			System.out.println("3rd Quarter");
+
+		else
+			System.out.println("4th Quarter");
+
+	}	
+}

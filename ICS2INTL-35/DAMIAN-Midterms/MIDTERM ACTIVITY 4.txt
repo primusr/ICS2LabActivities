@@ -1,0 +1,143 @@
+MOJZESZ REDD DAMIAN
+MIDTERM ACTIVITY 4
+
+3.4. Simulate and write what will be displayed on the screen.
+	Input integer number: 3
+	Input integer number: 3
+	Input integer number: 3
+	Input integer number: 3
+	Input integer number: 3
+	Input integer number: 3
+	Input integer number: 3
+	Input integer number: 3
+	Input integer number: 3
+	Input integer number: 3
+	The Total value for counter is: 10
+
+3.5. What do you think is being counted in the program?
+	- The number of times I input a number.
+
+4. Revise your Count.java program and save it as Count2.java.
+Thereafter, the user will be asked to input 10 integer numbers and display
+how many of these 10 numbers are even and how many are odd. Use
+only one variable for your counter.
+
+4.1. Write your complete Java program here
+	import java.io.*;
+public class Count2{
+	public static void main(String[] args){
+		int i, n, ctr, ctrA;
+		String input = " ";
+		ctr = 0;
+		ctrA = 0;
+
+		BufferedReader in = new BufferedReader(
+			new InputStreamReader(System.in));
+	
+	for(i = 1; i<=10; i++){
+		System.out.print("Input integer number: ");
+	try{
+		input = in.readLine();
+	}catch(IOException e){
+		System.out.println("Error!");
+	}
+	n = Integer.parseInt(input);
+	if(n%2 == 0){
+		ctr = ctr + 1;
+		}
+	else{
+		ctrA = ctrA + 1;
+		}
+	}	
+	System.out.println("The total Even number is " + ctr);
+	System.out.println("The total Odd number is " + ctrA);
+	}
+}
+
+4.3. Run your program.
+4.4. Simulate and write what will be displayed on the screen.
+	Input integer number: 1
+	Input integer number: 2
+	Input integer number: 3
+	Input integer number: 4
+	Input integer number: 5
+	Input integer number: 6
+	Input integer number: 7
+	Input integer number: 8
+	Input integer number: 9
+	Input integer number: 10
+	The total Even number is 5
+	The total Odd number is 5
+
+4.5. What do you think is the purpose of counters?
+	-A counter is  used to keep track of the count or frequency 
+	of a certain group of items. 
+
+5.4. Simulate and write what will be displayed on the screen.
+	Input integer number: 1
+	Input integer number: 1
+	Input integer number: 1
+	Input integer number: 1
+	Input integer number: 1
+	Input integer number: 1
+	Input integer number: 1
+	Input integer number: 1
+	Input integer number: 1
+	Input integer number: 1
+	The sum of the integers is 10
+
+5.5. What do you think is being accumulated in your program?
+	- The sum of the numbers I input.
+
+6. Revise your Accum.java program and save it as Accum2.java.
+Thereafter, the user will be asked to input 10 integer numbers and display
+the sum of all even numbers and the sum of all odd numbers.
+6.1. Write your complete Java program here:
+	import java.io.*;
+public class Accum2{
+public static void main(String[] args){
+		int i, n, sum = 0, a = 0;
+		String input = " ";
+
+		BufferedReader in = new BufferedReader(
+			new InputStreamReader(System.in));
+	for(i = 0; i<10; i++){
+		System.out.print("Input integer number: ");
+	try{
+		input = in.readLine();
+	}catch(IOException e){
+		System.out.println("Error!");
+	}
+	n = Integer.parseInt(input);
+	if(n%2==0)
+		sum = sum + n;
+	else
+		a = a + n;
+	}
+	System.out.println("The sum of the even integers is " + sum);
+	System.out.println("The sum of the odd integers is " + a);
+	}
+}
+
+6.3. Run your program.
+6.4. Simulate and write what will be displayed on the screen.
+	Input Integer number: 1
+	Input Integer number: 2
+	Input Integer number: 3
+	Input Integer number: 4
+	Input Integer number: 5
+	Input Integer number: 6
+	Input Integer number: 7
+	Input Integer number: 8
+	Input Integer number: 9
+	Input Integer number: 10
+	The sum of the even integers is 30
+	The sum of the odd integers is 25
+
+6.5. What do you think is the purpose of accumulators?
+	- Accumulator is used to keep track of the
+	accumulated value or sum of a certain group of items.
+
+7. Differentiate now counters from accumulators.
+	- Counters is used to keep track on how many times you input a number while accumulators
+		is keeping track on the values of the numbers you input and it accumulate the sum or total of the values you input.

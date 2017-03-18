@@ -1,0 +1,2 @@
+5.1
+imput integer number 5

@@ -1,0 +1,156 @@
+3.4
+Input integer number:1
+Input integer number:1
+Input integer number:1
+Input integer number:1
+Input integer number:1
+Input integer number:1
+Input integer number:1
+Input integer number:1
+Input integer number:1
+Input integer number:1
+The total value for counter is 10
+
+3.5
+the number of integer was being asked
+
+4.1
+import java.util.*;
+	public class Count2{
+	static Scanner console = new Scanner(System.in);
+	static final int N = 10;
+		public static void main(String[] args){
+			int counter;
+			int number;
+			int zeros = 0;
+			int odds = 0;
+			int even = 0;
+
+			System.out.println("Please enter " + N +" integers, positive, " + " negative, or zeros.");
+			for (counter = 1; counter <=N; counter++){
+			number = console.nextInt();
+			System.out.print(number +" ");
+
+			switch(number%2){
+			case 0:
+				even++;
+				if(number == 0)
+					zeros++;
+				break;
+			case 1:
+			case -1:
+				odds++;
+	}
+}
+			System.out.println();
+			System.out.println("there are " + even + " even, " + " which also includes " + zeros + "zeros");
+			System.out.println("Total number of odd is: " + odds);
+	}
+}
+
+4.4
+Please enter 10 integers,positive,negative, or zeros.
+1
+1 2
+2 3
+3 4
+4 5 
+5 6
+6 7
+7 8
+8 9
+9 18
+18
+There are 5 even, which also include 0 zeros
+Total number of odd is: 5
+
+5.4
+Input integer number:1
+Input integer number:2
+Input integer number:3
+Input integer number:4
+Input integer number:5
+Input integer number:6
+Input integer number:7
+Input integer number:8
+Input integer number:9
+Input integer number:10
+The total value for counter is 55
+
+5.5
+all the integers were being sum and encoded
+
+6.1
+import java.util.*;
+public class Accum2{
+	static Scanner console = new Scanner(System.in);
+	static final int N = 10;
+		public static void main(String[] args){
+			int counter;
+			int number;
+			int zeros = 0;
+			int odds = 0;
+			int even = 0;
+			int sumeven = 0;
+			int sumodd = 0;
+			String input ="";
+
+			System.out.println("Please enter " + N + " integers, positive, " + "negative, or zeros.");
+			for (counter = 1; counter <=N; counter++){
+			number = console.nextInt();
+			System.out.println(number +"");
+
+			switch(number%2){
+			case 0:
+				even++;
+				if(number == 0)
+					zeros++;
+			sumeven = sumeven + number;
+			System.out.println("The sum of even number are: " +sumeven);
+				break;
+			case 1:
+			case -1:
+				odds++;
+			sumodd = sumodd + number;
+			System.out.println("The sum of odd number are: " +sumodd);
+	}
+}
+			
+			System.out.println();
+			System.out.println("There are " + even + " even, " + " Which also includes " + zeros + " zeros");
+			System.out.println("Total of odd is: " + odds);
+	}
+}
+
+6.4
+Please enter 10 integers, positive, negative, or zeros.
+3
+The sum of odd number are: 3
+4
+The sum of even number are: 4
+5
+The sum of even number are: 8
+6
+The sum of even number are: 10
+7
+The sum of odd number are:15
+3
+The sum of even number are: 18
+2
+The sum of even number are: 12
+3
+The sum of odd number are: 21
+3
+The sum of even number are: 24
+4
+The sum of even number are: 16
+
+There are 7 even, Which also includes 0 zeros
+Total of odd is: 3
+
+6.5
+In the central processing unit, or CPU, of a computer, the accumulator acts as a special register that stores values and increments of intermediate arithmetic and logic calculations. The accumulator is a temporary memory location that is accessed speedily by the CPU.
+
+7.
+Accumulator holds the arithmetic and logical data inside the CPU.
+It can also called as register which stores the data temporarily.

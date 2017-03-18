@@ -1,0 +1,152 @@
+3.4
+Input integer number: 5
+Input integer number: 5
+Input integer number: 5
+Input integer number: 5
+Input integer number: 5
+Input integer number: 4
+Input integer number: 3
+Input integer number: 4
+Input integer number: 5
+Input integer number: 4
+The total value for counter is 10
+
+3.5
+the total value for counter, if how many Input integer number is being asked
+
+4.1
+import java.util.*;
+      public class Count2{
+      public Scanner console = new Scanner(System.in);
+      static final int N = 10;
+             public static void main(String[] args){
+             int counter;
+             int number;
+             int zeros = 0;
+             int odds = 0;
+             int even = 0;
+
+             System.out.println("Please enter " + N +" integers,positive, " + " negative, or zeros.");
+             for (counter = 1; counter <=N; counter++){
+             number = console.nextInt();
+             System.out.print(number + "");
+
+             switch(number%2){
+             case 0:
+                     even++;
+                     if(number == 0)
+                              zeros++;
+                     break;
+             case 1:
+             case -1:
+                     odds++;
+   } 
+}
+         System.out.println();
+         System.out.println("there are " + even + " even, " + "which also includes " + zeros + "zeros");
+         System.out.println("Total number of odd is: " + odds);
+    }
+}
+4.4
+Please enter 10 integers,positive,negative or zeros.
+1
+1 2
+2 3
+3 4
+4 5
+5 6
+6 7
+7 8
+8 9
+9 18
+18
+There are 5 even, which also include 0  zeros
+Total number of odd is: 5
+4.5
+The purpose of Counter is to keep track of the count of a certain group of items. Usually as follows: its data is integer, it is initialized to a value of 0, incremented by 1 inside a loop.
+5.4
+Input integer number: 5
+Input integer number: 5
+Input integer number: 5
+Input integer number: 5
+Input integer number: 5
+Input integer number: 5
+Input integer number: 5
+Input integer number: 5
+Input integer number: 5
+Input integer number: 5
+the sum of the integers is 50
+
+5.5
+all the integers were being sum and encoded
+
+6.1
+import java.util.*;
+public class Accum2{
+       static Scanner console = new Scanner(System.in);
+       static final int N = 10;
+              public static void main(String[] args){
+                      int counter;
+                      int number;
+                      int zeros = 0;
+                      int odds = 0;
+                      int even = 0;
+                      int sumeven = 0;
+                      int sumodd = 0;
+                      String input = "";
+
+                      System.out.println("Please enter " + N + " integers, positive, " + "negative, or zeros. ");
+                      for (counter = 1; counter <=N; counter++){
+                      number = console.nextInt();
+                      System.out.print(number + "");
+
+                      switch(number%2){
+                      case 0:
+                              even++;
+                              if(number == 0)
+                                      zeros++;
+                      sumeven = sumeven + number;
+                      System.out.println("The sum of even number are: " + sumeven);
+                             break;
+                      case 1:
+                      case -1:
+                              odds++;
+                      sumodd = sumodd + number;
+                      System.out.println("The sum of odd numbers are: " + sumodd);
+    }
+}
+              System.out.println();
+              System.out.println("There are " + even + "even, " + " which includes " + zeros + "zeros");
+              System.out.println("Total of odd is: " + odds);
+    }
+}
+6.4
+Please enter 10 integers, positive, negative, or zeros.
+2
+The sum of even numbers are: 2
+3
+The sum of odd numbers are: 3
+4
+The sum of even numbers are: 6
+5
+The sum of odd numbers are: 8
+6
+The sum of even numbers are: 12
+7
+The sum of odd numbers are: 15
+8
+The sum of even numbers are: 20
+9
+The sum of odd numbers are: 24
+0
+The sum of even numbers are: 20
+5
+The sum of odd numbers are: 29
+
+There are 5 even, which includes 1 zeros
+Total of odd is: 5
+6.5
+the purpose of the accumulator is to act as a special register that store values and increments of intermediate arithmetic and logic calculations, It is also a temporary memory location that is accessed speedily by the CPU
+
+7.0
+the difference between counter and accumulator is that couter is a variable that is used to keep track of the count of a certain group of items while accumulator is a variable that is used to keep track of the accumulated value of a certain group of items.

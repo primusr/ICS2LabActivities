@@ -1,0 +1,30 @@
+3.4
+Input starting number: 5
+Input ending number: 50
+Sum = 621
+
+4.1
+Input starting number: 5
+Input ending number: 50
+Sum = 621
+
+5.1
+Input starting number: 5
+Input ending number: 50
+Sum = 621
+
+7.0
+1. while Loop
+2. for Loop
+3. do-while Loop
+
+8.0
+1. Initialization of a variable or of several variables
+2. Condition (that would evaluate to either true or false); the condition check
+is usually made on the current value of the variable initialized in (1) above.
+3. Body of the loop which maybe a single statement or a group of statements
+4. A change of state which is usually a statement inside the body of the loop
+that changes the contents of the variable(s)
+
+9.0
+the different among these identified loop cunstructions is that they dont follow the arrangement of the identified loop.

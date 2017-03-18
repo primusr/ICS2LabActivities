@@ -1,0 +1,25 @@
+import java.io.*;
+public class dowhile{
+ 	public static void main(String[] args){
+		int i, k:
+		char again;
+		String input = "";
+ 		
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in))
+		
+		do(i=1;i<=10;i++){
+			for(k=1;k<=10;k++){
+				System.out.println(k);
+				++i;
+				++k;
+		}
+		System.out.println("Do you want to try again? y/n");
+
+		try{
+ 		input = in.readLine();
+ 		}catch(IOException e){}
+		again = input.charAt(0);{
+		}while(again == 'Y' || again == 'y');
+	}		
+}
+}

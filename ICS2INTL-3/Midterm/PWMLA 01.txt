@@ -1,0 +1,272 @@
+3.4
+
+Input a Number:
+10
+The number 10 is POSITIVE
+
+**
+
+4.1
+
+import java.io.*;
+
+public class TwoNum{
+	public static void main(String[] args){
+		int op1, op2;
+		String input1 = " ";
+		String input2 = " ";
+
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+	
+		try{			
+			System.out.print("Enter first integer: ");
+			input1 = in.readLine();
+			System.out.print("Enter second integer: ");
+			input2 = in.readLine();
+		}catch(IOException e){
+			System.out.println("Error!");
+		}
+
+		op1 = Integer.parseInt(input1);
+		op2 = Integer.parseInt(input2);
+
+		if (op1 > op2){
+			System.out.println(op1 + " is GREATER THAN " + op2);
+		}
+		if (op1 < op2){
+			System.out.println(op1 + " is LESS THAN " + op2);
+		} 
+		if (op1 == op2){
+			System.out.println(op1 + " is EQUIVALENT TO " + op2);
+		}
+	}
+
+}
+
+**
+
+4.4
+
+Enter first number: 10
+Enter second integer: 2
+10 is GREATER THAN 2
+
+**
+
+5.1
+
+import java.io.*;
+
+public class PosNeg2{
+	public static void main(String[] args){
+		int number;
+		String input = " ";
+
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.println("Input a Number: ");
+		
+		try{
+			input = in.readLine();
+		}catch(IOException e){
+			System.out.println("Error!");
+		}
+		
+		number = Integer.parseInt(input);
+		
+		if (number < 0){
+			System.out.println("The number " + number + " is NEGATIVE");
+		} else {
+			System.out.println("The number " + number + " is POSITIVE");
+		}
+	}
+
+}
+
+**
+
+5.4
+
+Input a Number:
+-8
+The number -8 is NEGATIVE
+
+
+**
+
+6.1
+
+import java.io.*;
+
+public class TwoNum2{
+	public static void main(String[] args){
+		int op1, op2;
+		String input1 = " ";
+		String input2 = " ";
+
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+	
+		try{			
+			System.out.print("Enter first integer: ");
+			input1 = in.readLine();
+			System.out.print("Enter second integer: ");
+			input2 = in.readLine();
+		}catch(IOException e){
+			System.out.println("Error!");
+		}
+
+		op1 = Integer.parseInt(input1);
+		op2 = Integer.parseInt(input2);
+
+		if (op1 > op2){
+			System.out.println(op1 + " is GREATER THAN " + op2);
+		} else if (op1 < op2){
+			System.out.println(op1 + " is LESS THAN " + op2);
+		} else {
+			System.out.println(op1 + " is EQUIVALENT TO " + op2);
+		}
+	}
+
+}
+
+**
+
+6.4
+
+Enter first number: 0
+Enter second integer: 2
+0 is LESS THAN 2
+
+**
+
+7.4
+
+Input age: 101
+Invalid age
+
+Input age: 95
+SENIOR CITIZEN
+
+Input age: 50
+SENIOR CITIZEN
+
+Input age: 45
+ADULTSENIOR CITIZEN
+
+Input age: 13
+TEENAGERADULTSENIOR CITIZAN
+
+Input age: 10
+CHILDTEENAGERADULTSENIOR CITIZEN
+
+Input age: 3
+BABYCHILDTEENAGERADULTSENIOR CITIZEN
+
+Input age: -2
+Invalid ageBABYCHILDTEENAGERADULTSENIOR CITIZEN
+Invalid age
+
+**
+
+7.5
+
+Some of the inputs have multiple results.
+
+**
+
+8.1
+
+if (age < 0 || age >= 100){
+	System.out.print("Invalid age");
+}else if (age < 5) {
+	System.out.print("BABY");
+} else if (age < 12) {
+	System.out.print("CHILD");
+} else if (age < 20) {
+	System.out.print("TEENAGER");
+} else if (age < 50){
+	System.out.print("ADULT");
+} else if (age < 100){
+	System.out.print("SENIOR CITIZEN");
+}
+
+**
+
+8.2
+
+Input age: 101
+Invalid age
+
+Input age: 95
+SENIOR CITIZEN
+
+Input age: 50
+SENIOR CITIZEN
+
+Input age: 45
+ADULT
+
+Input age: 13
+TEENAGER
+
+Input age: 10
+CHILD
+
+Input age: 3
+BABY
+
+Input age: -2
+Invalid
+
+**
+
+8.3
+
+The results were limited to only one result
+
+**
+
+8.4
+
+Nested if statement: Tries all of the statements to test if a condition is satisfied
+Cascading if-else statement: Stops at a statement if one condition is satisfied
+
+***
+
+9.2
+
+import java.io.*;
+
+public class Bingo{
+	public static void main(String[] args){
+		int num;
+		String input = " ";
+		char letter;
+
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.print("Input integer: ");
+
+		try{
+			input = in.readLine();
+		}catch(IOException e){
+			System.out.print("Error!");
+		}	
+
+		num = Integer.parseInt(input);
+
+		if (num>= 1 && num <= 15){
+			letter = 'B';
+		} else if (num >= 16 && num <= 30){
+			letter = 'I';
+		} else if (num>= 31 && num <= 45){
+			letter = 'N';
+		} else if (num>= 46 && num <= 60){
+			letter = 'G';
+		} else if (num>= 61 && num <= 75){
+			letter = 'O';
+		}
+		System.out.println(letter);
+	}
+}
+

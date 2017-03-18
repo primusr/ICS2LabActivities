@@ -1,0 +1,109 @@
+Michael L. Dacyas
+ICS2
+PWMLA03
+
+3.4]Iput starting number: 0
+    Input end number: 1
+    Sum = 1
+
+4.1]Input starting number: 2
+    Input end number: 4
+    Sum = 3
+
+5.1]Input starting number: 1
+    Input end number: 2
+    Sum = 1
+
+6]After simulation for these three programs,
+  the main objective of these programs is 
+  to test various conditiond using 
+  single if...else if statement.
+
+7]The different loop control structures 
+  in Java are while loop,for loop, 
+  and do...while loop.
+
+8]The usual similar components of these
+  loop-contructs execution from its
+  normal sequence.
+
+9]The different among these identified 
+  loop contructs is when execution leaves
+  a scope,all automatic objects that were
+  created in that scope are destroyed.
+
+10.4]
+// Using while Loop
+
+import java.io.*;
+public class Sum3{
+public static void main(String[] args){
+int start = 0, end = 0, sum;
+String input ="";
+BufferedReader in = new BufferedReader(new
+InputStreamReader(System.in));
+try{
+System.out.print(“Input starting number: “);
+input=in.readLine();
+start=Integer.parseInt(input);
+System.out.print(“Input ending number: “);
+input=in.readLine();
+end=Integer.parseInt(input);
+}catch(IOException e){
+System.out.println(“Error!”);
+}
+if(start >= end){
+System.out.print(“Starting number should be lesser “);
+System.out.println(“than the ending number. “);
+System.out.println(“Try again.”);
+System.exit(0);
+}
+if(start%2 == 0){
+start = start + 1;
+}
+sum = 0;
+do{
+sum = sum + start;
+start = start + 2;
+}while(start <= end);
+System.out.println("Sum = "+sum);
+}
+}
+
+
+// Using for Loop
+import java.io.*;
+public class Sum3{
+public static void main(String[] args){
+int start = 0, end = 0, sum;
+String input ="";
+BufferedReader in = new BufferedReader(new
+InputStreamReader(System.in));
+try{
+System.out.print(“Input starting number: “);
+input=in.readLine();
+start=Integer.parseInt(input);
+System.out.print(“Input ending number: “);
+input=in.readLine();
+end=Integer.parseInt(input);
+}catch(IOException e){
+System.out.println(“Error!”);
+}
+if(start >= end){
+System.out.print(“Starting number should be lesser “);
+System.out.println(“than the ending number. “);
+System.out.println(“Try again.”);
+System.exit(0);
+}
+if(start%2 == 0){
+start = start + 1;
+}
+sum = 0;
+do{
+sum = sum + start;
+start = start + 2;
+}while(start <= end);
+System.out.println("Sum = "+sum);
+}
+}
+

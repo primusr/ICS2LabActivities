@@ -1,0 +1,37 @@
+Midterm Laboratory Activity 3
+Name: Abouzahou, Islam 
+
+3.4:
+Input Starting Number: 1
+Input ending number: 5
+Sum = 9
+-----------
+4.1:
+Input Starting Number: 1
+Input ending number: 5
+Sum = 9
+------------
+5.1:
+Input Starting Number: 1
+Input ending number: 5
+Sum = 9
+-------------
+6:
+Sum up the numbers between the given starting and ending numbers
+-----------
+7:
+While , Do while , and For loops
+-----------
+8:
+the if function
+------------
+9:
+the while loop :Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.
+
+For loop: Execute a sequence of statements multiple times and abbreviates the code that manages the loop variable.
+
+do while loop: Excutes the body before the condition so that it at least gives out one result.
+------------
+10.4:
+
+

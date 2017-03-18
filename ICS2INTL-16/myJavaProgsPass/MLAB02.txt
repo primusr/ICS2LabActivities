@@ -1,0 +1,124 @@
+3.4
+INPUT A NUMBER FROM 1 -7:
+1
+the day is monday!
+have a nice day!
+
+4.2
+INPUT A NUMBER FROM 1 -7:
+8
+INVALID INPUT!!!!
+have a nice day!
+
+4.3
+INPUT A NUMBER FROM 1 -7:
+2
+the day is a TUESDAY!
+the day is a WEDNESDAY!
+have a nice day!
+
+the effect of removing the break statement after 2 and before 3 
+is that it did not separate the conditions therefor 2 conditions are shown instead of 1.
+
+4.5
+yes, there was no errors
+yes, where you place your default matters.
+
+4.6
+yes, there was no errors
+none.
+
+5.3
+in my point of view. it is easier to use the switch-case
+but it depends with the program you will be making if the input and problem
+is better with switch-case or cascading if-else.
+
+
+SWITCH-CASE
+import java.io.*;
+public class quarter{
+	public static void main(String[] args){
+
+		int day;
+		String input = "";
+
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.println("Input a number from 1 - 12: ");
+
+		try{
+		input = in.readLine();
+		}catch(IOException e)
+		{
+		System.out.println("error");
+		}
+
+		day = Integer.parseInt(input);
+
+		switch(day){
+		case 1: System.out.println("1st Quarter");
+			break;
+		case 2: System.out.println("1st Quarter");
+			break;
+		case 3: System.out.println("1st Quarter");
+			break;
+		case 4: System.out.println("2nd Quarter");
+			break;
+		case 5: System.out.println("2nd Quarter");
+			break;
+		case 6: System.out.println("2nd Quarter");
+			break;
+		case 7: System.out.println("3rd Quarter");
+			break;
+		case 8: System.out.println("3rd Quarter");
+			break;
+		case 9: System.out.println("3rd Quarter");
+			break;
+		case 10: System.out.println("4th Quarter");
+			break;
+		case 11: System.out.println("4th Quarter");
+			break;
+		case 12: System.out.println("4th Quarter");
+			break;
+		}
+		System.out.println("God Bless!!!");
+	}
+}
+
+
+CASCADING IF-ELSE
+import java.io.*;
+public class quarter{
+	public static void main(String[] args){
+
+		int day;
+		String input = "";
+
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.println("Input a number from 1 - 12: ");
+
+		try{
+		input = in.readLine();
+		}catch(IOException e)
+		{
+		System.out.println("error");
+		}
+
+		day = Integer.parseInt(input);
+
+		if (day >= 1 && day <= 3)
+			System.out.println("1st Quarter");
+
+		else if (day >= 4 && day <= 6)
+			System.out.println("2nd Quarter");
+			
+		else if (day >= 7 && day <= 9)
+			System.out.println("3rd Quarter");
+		
+		else if (day >= 10 && day <= 12)
+			System.out.println("4th Quarter");
+	}
+}
+
+

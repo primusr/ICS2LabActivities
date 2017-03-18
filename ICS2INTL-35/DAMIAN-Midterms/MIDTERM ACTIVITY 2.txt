@@ -1,0 +1,122 @@
+DAMIAN, MOJZESZ REDD S.
+MIDTERM ACTIVITY 2
+ICS 2 TTHS 6:45-8:00
+
+
+
+
+
+
+
+
+
+3.4
+	Input a number from 1 to 7: 
+	1
+	The Day is Monday!
+	Have a Nice Day.
+4.2
+	Input a number from 1 to 7: 
+	9
+	Invalid Input!!!
+	Have a Nice Day.
+4.3
+	Input a number from 1 to 7: 
+	2
+	The Day is Tuesday!
+	The Day is Wednesday!
+	Have a Nice Day.
+
+	What is the effect of removing the break statement?
+	- The case that will be print out is the chosen case and the next case because the statement didnt break so 
+	the program thinks it is part of the chosen case.
+
+4.5
+	Compile,run your program. Try inputting a value that is not from 1 to 7.
+
+	Did your program behave normally? (YES)
+	Does it really matter where you place the default? (NO)
+4.6
+	Try rearranging the case values in a randomize manner.Compile and run your program.
+	
+	Did your program behave normally? (YES)
+	Is there any effect on the program behavior? (NONE)
+5.3
+	
+	-For me the switch-case statement is easier to write and understand because in the if-else statements you need to specify the range of the
+	number per statement unlike in the Switch-case statement you can just write the case number and thats it.
+
+5.4
+import java.io.*;
+public class Quarter{
+	public static void main(String[] args){
+		int quarter;
+		String cc = " ";
+		
+		BufferedReader in = new BufferedReader(
+			new InputStreamReader(System.in));
+		
+		System.out.println("Input a number from 1 to 12: ");
+		
+		
+		try{
+			cc = in.readLine();
+		}catch(IOException e){
+			System.out.println("Error");
+		}
+		quarter = Integer.parseInt(cc);
+		
+		switch(quarter){
+			case 1:
+			case 2:
+			case 3: System.out.println("1st Quarter");
+					break;
+			case 4:
+			case 5:
+			case 6: System.out.println("2nd Quarter:");
+					break;
+			case 7:
+			case 8:
+			case 9: System.out.println("3rd Quarter:");
+					break;
+			case 10:
+			case 11:
+			case 12: System.out.println("4th Quarter");
+					break;
+			}
+	}
+}
+
+
+5.5
+	import java.io.*;
+public class Quarter2{
+	public static void main(String[] args){
+		int quarter;
+		String cc = " ";
+		
+		BufferedReader in = new BufferedReader(
+			new InputStreamReader(System.in));
+		
+		System.out.println("Input a number from 1 to 12: ");
+		
+		
+		try{
+			cc = in.readLine();
+		}catch(IOException e){
+			System.out.println("Error");
+		}
+		quarter = Integer.parseInt(cc);
+		
+		if(quarter != 0 && quarter <= 3)
+			System.out.println("1st Quarter");
+		else if(quarter > 3 && quarter <= 6)
+			System.out.println("2nd Quarter");
+		else if(quarter > 6 && quarter <= 9)
+			System.out.println("3rd Quarter");
+		else if(quarter > 9 && quarter <= 12)
+			System.out.println("4th Quarter");
+		else
+			System.out.println("Invalid input");
+	}
+}

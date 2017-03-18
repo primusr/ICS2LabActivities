@@ -1,0 +1,133 @@
+Alejandro Manzano III
+ICS2 TTHS 6:45 - 8:00
+
+Midterm Laboratory Activity 4
+
+3.4
+	Input integer number: 1
+	Input integer number: 2
+	Input integer number: 3
+	Input integer number: 4
+	Input integer number: 5
+	Input integer number: 6
+	Input integer number: 7
+	Input integer number: 8
+	Input integer number: 9
+	Input integer number: 10
+	The total value for counter is 10
+
+3.5
+	The total number of integers that have been entered
+
+4.1
+	import java.io.*;
+	public class Count2{
+	  public static void main(String[] args){
+	   int i, n, even_ctr=0;
+	   String input = " ";
+
+	   BufferedReader in = new BufferedReader(new
+                          InputStreamReader(System.in));
+
+	   for(i = 1; i<=10; i++){
+	     System.out.print("Input integer number: ");
+	     try{
+	       input = in.readLine();
+	     }catch(IOException e){
+	       System.out.println("Error!");
+	     }
+
+	     n = Integer.parseInt(input);
+
+	     if(n % 2 == 0){
+	      even_ctr++;
+	     }
+	   }
+	   System.out.println("EVEN: " + even_ctr + "\nODD: "+ (10-even_ctr));
+	  }
+	}
+
+4.4
+	Input integer number: 1
+	Input integer number: 2
+	Input integer number: 3
+	Input integer number: 4
+	Input integer number: 5
+	Input integer number: 6
+	Input integer number: 7
+	Input integer number: 8
+	Input integer number: 9
+	Input integer number: 10
+	EVEN: 5
+	ODD: 5
+
+
+4.5
+	The Purpose of the counters is to determine how many odd and even numbers have been entered
+5.4
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	The sum of the integers is 20
+
+5.5
+	The sum of the inegers
+
+6.1
+	import java.io.*;
+	public class Accum2{
+	public static void main(String[] args){
+		int i, n, sum = 0, a = 0;
+		String input = " ";
+
+		BufferedReader in = new BufferedReader(
+			new InputStreamReader(System.in));
+	for(i = 0; i<10; i++){
+		System.out.print("Input integer number: ");
+	try{
+		input = in.readLine();
+	}catch(IOException e){
+		System.out.println("Error!");
+	}
+	n = Integer.parseInt(input);
+	if(n%2==0)
+		sum = sum + n;
+	else
+		a = a + n;
+	}
+	System.out.println("The sum of the even integers is " + sum);
+	System.out.println("The sum of the odd integers is " + a);
+	}
+}
+	
+6.4
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	Input integer number: 2
+	The sum of the even inters is 20
+	The sum of the odd integers is 0
+
+6.5
+	The sum of of odd numbers and even numbers that has been entered
+
+7.
+	Counters are variables that count the number of times something has happened. Counters can either be incremented or decremented. Accumulators are used to sum a series of numbers and uses a variable known as an accumulator. The difference between a counter and accumulator is that you generally add just one to the value of a counter but any number can be added to the value of an accumulator.
+
+
+
+
+

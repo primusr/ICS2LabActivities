@@ -1,0 +1,118 @@
+3.4
+C:\myJavaProgs>java Days
+Input a number from 1 to 7: 5
+The day is Friday!
+Have a nice day.
+
+4.2
+C:\myJavaProgs>java Days
+Input a number from 1 to 7: 8
+Invalid input!!!
+Have a nice day.
+
+4.3
+C:\myJavaProgs>java Days
+Input a number from 1 to 7: 2
+The day is Tuesday!
+The day is Wednesday!
+Have a nice day.
+
+It makes the next statement true and valid.
+
+4.5
+yes
+no
+
+4.6
+No
+No
+
+5.3
+switch-case is easier and more readable.
+
+5.1
+/* Programmed by: <Katelyn>
+   Program title: Days.java
+   Program Date: <February 23,2017> */
+
+import java.io.*;
+public class Quarter{
+  public static void main(String[] args) {
+      int day;
+      String input = "";
+
+      BufferedReader in = new BufferedReader(new
+			    InputStreamReader(System.in));
+
+      System.out.print("Input a number of month: ");
+
+      try{
+        input = in.readLine();
+      }catch(IOException e){
+	System.out.println("Error!");
+      }
+
+      day = Integer.parseInt(input);
+
+      switch(day){
+	case 1 : 
+	case 2 : 
+	case 3 : System.out.println("First Quarter");
+		 break;
+	case 4 : 
+	case 5 : 
+	case 6 : System.out.println("Second Quarter");
+	         break;
+	case 7 : 
+	case 8 : 
+	case 9 : System.out.println("Third Quarter");
+	 	 break;
+	case 10 : 
+	case 11 : 
+	case 12 : System.out.println("Fourth Quarter");
+		 break;
+       }
+    }
+}
+
+5.2
+/* Programmed by: <Katelyn>
+   Program title: Days.java
+   Program Date: <February 23,2017> */
+
+import java.io.*;
+public class Quarter{
+  public static void main(String[] args) {
+      int month;
+      String input = "";
+
+      BufferedReader in = new BufferedReader(new
+			    InputStreamReader(System.in));
+
+      System.out.print("Input a number of month: ");
+
+      try{
+        input = in.readLine();
+      }catch(IOException e){
+	System.out.println("Error!");
+      }
+
+      month = Integer.parseInt(input);
+
+      if(month<=3){
+	System.out.println("First Quarter");
+      }
+      else if(month>=4 && month<=6){
+	System.out.println("Second Quarter");
+      }
+      else if(month>=7 && month<=9){
+	System.out.println("Third Quarter");
+      }
+      else if(month>=10 && month<=12){
+	System.out.println("Fourth Quarter");
+      }
+      else{
+	System.out.println("Invalid month");
+      }
+   }
+}

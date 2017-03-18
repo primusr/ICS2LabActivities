@@ -1,0 +1,122 @@
+JIM STEVEN ESPELICO
+ICS2
+PWMLA02
+3.4 ==========================================
+
+c:\myJavaProgs>javac Days.java
+
+c:\myJavaProgs>javac Days.java && java Days
+Input a number from 1 to 7: 1
+The day is a Monday!
+Have a nice day.
+
+4.2 ==========================================
+
+c:\myJavaProgs>javac Days.java && java Days
+Input a number from 1 to 7: 8
+Invalid input!!!
+Have a nice day.
+
+4.3 ==========================================
+
+c:\myJavaProgs>javac Days.java && java Days
+Input a number from 1 to 7: 2
+The day is a Monday!
+The day is a Monday!
+Have a nice day.
+
+the loop was not immediately terminated and the program control resumes at the next statement following the loop.
+
+4.5 ==========================================
+
+a. yes
+b. no
+
+4.6 ==========================================
+
+a. yes
+b. no
+
+5.3 ==========================================
+
+cascading if-else statements is better in terms of readability while swithc-case statements are more effecient in terms of writability. There are lots of cases where an if-else statement is superior to a switch statement especially when you need to use other logic operators.The more values you add requires the jump tables to be larger and the switch becomes less efficient.
+
+===============================================
+
+/* Programmed By: Jim Steven Espelico
+Quarter1/switch-case */
+import java.io.*;
+public class Quarter1{
+	public static void main(String[] args){
+	int month;
+	String input = " ";
+		BufferedReader in = new BufferedReader(new
+		InputStreamReader(System.in));
+		
+		System.out.print("Input a number from 1 to 12: ");
+		
+		try{
+		input = in.readLine();
+		} catch(IOException e){
+		System.out.println("Error!");
+		}
+		
+		month = Integer.parseInt(input);
+		
+		switch(month){
+			case 1 :
+			case 2 : 
+			case 3 : System.out.println("1st Quarter");
+						break;
+			case 4 : 
+			case 5 : 			
+			case 6 : System.out.println("2nd Quarter");
+						break;
+			case 7 : 
+			case 8 : 
+			case 9 : System.out.println("3rd Quarter");
+						break;
+			case 10 :
+			case 11 : 
+			case 12 : System.out.println("4th Quarter");
+						break;
+					default: System.out.println("Invalid input!!!");
+						break;
+								
+			}
+			}
+			}
+
+===============================================
+
+/* Programmed By: Jim Steven Espelico
+Quarter2/switch-case */
+import java.io.*;
+public class Quarter2{
+	public static void main(String[] args){
+	int month;
+	String input = " ";
+		BufferedReader in = new BufferedReader(new
+		InputStreamReader(System.in));
+		
+		System.out.print("Input a number from 1 to 12: ");
+		
+		try{
+		input = in.readLine();
+		} catch(IOException e){
+		System.out.println("Error!");
+		}
+		
+		month = Integer.parseInt(input);
+		
+		if ( month >= 1 || month <= 3){
+		System.out.println("1st Quarter");}
+		else if ( month >= 4 || month <= 6){
+		System.out.println("2st Quarter");}
+		else if ( month >= 7 || month <= 9){
+		System.out.println("3st Quarter");}
+		else if ( month >= 10 || month <= 12){
+		System.out.println("4st Quarter");}
+								
+			}
+			}

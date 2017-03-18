@@ -1,0 +1,117 @@
+Manzano, Alejandro
+ICS2 TTHS 6:45-8:00
+
+Midterm Laboratory Activity 2
+
+
+3.4
+3
+The Day is Wednesday!
+Have a Nice Day.
+
+
+4.2
+Input a number from 1 to 7: 
+8
+Invalid Input!!!
+Have a Nice Day.
+
+
+4.3
+Input a number from 1 to 7: 
+2
+The Day is Tuesday!
+The Day is Wednesday!
+Have a Nice Day.
+
+The next statement is included because without the break statement the loop will not be terminated. 
+
+
+4.5
+Did your program behave normally? (YES)
+Does it really matter where you place the default? (NO)
+
+
+4.6
+Did your program behave normally? (YES)
+Is there any effect on the program behavior? (NONE)
+
+
+5.3
+Switch is generally faster than a long list of ifs because the compiler can generate a jump table. The longer the list, the better a switch statement is over a series of if statements
+
+
+5.4
+import java.io.*;
+public class Quarter{
+	public static void main(String[] args){
+		int quarter;
+		String cc = " ";
+		
+		BufferedReader in = new BufferedReader(
+			new InputStreamReader(System.in));
+		
+		System.out.println("Input a number from 1 to 12: ");
+		
+		
+		try{
+			cc = in.readLine();
+		}catch(IOException e){
+			System.out.println("Error");
+		}
+		quarter = Integer.parseInt(cc);
+		
+		switch(quarter){
+			case 1:
+			case 2:
+			case 3: System.out.println("1st Quarter");
+					break;
+			case 4:
+			case 5:
+			case 6: System.out.println("2nd Quarter:");
+					break;
+			case 7:
+			case 8:
+			case 9: System.out.println("3rd Quarter:");
+					break;
+			case 10:
+			case 11:
+			case 12: System.out.println("4th Quarter");
+					break;
+			}
+	}
+}
+
+
+5.5
+	import java.io.*;
+public class Quarter2{
+	public static void main(String[] args){
+		int quarter;
+		String cc = " ";
+		
+		BufferedReader in = new BufferedReader(
+			new InputStreamReader(System.in));
+		
+		System.out.println("Input a number from 1 to 12: ");
+		
+		
+		try{
+			cc = in.readLine();
+		}catch(IOException e){
+			System.out.println("Error");
+		}
+		quarter = Integer.parseInt(cc);
+		
+		if(quarter != 0 && quarter <= 3)
+			System.out.println("1st Quarter");
+		else if(quarter > 3 && quarter <= 6)
+			System.out.println("2nd Quarter");
+		else if(quarter > 6 && quarter <= 9)
+			System.out.println("3rd Quarter");
+		else if(quarter > 9 && quarter <= 12)
+			System.out.println("4th Quarter");
+		else
+			System.out.println("Invalid input");
+	}
+}

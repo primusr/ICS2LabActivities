@@ -1,0 +1,172 @@
+Answers Lab Activity 4
+
+3.4
+C:\myJavaProgs>java Count
+Input integer number: Input integer number: 7
+Input integer number: Input integer number: 9
+Input integer number: Input integer number: 5
+Input integer number: Input integer number: 11
+Input integer number: Input integer number: 17
+Input integer number: Input integer number: 21
+Input integer number: Input integer number: 15
+Input integer number: Input integer number: 18
+Input integer number: Input integer number: 21
+Input integer number: Input integer number: 26
+The total value for counter is 10
+
+3.5
+The number of integer being inputed.
+
+4.1
+import java.util.*;
+ public class Count2{
+     static Scanner console = new Scanner(System.in);
+     static final int N = 10;
+      public static void main (String[] args){
+             int counter;
+	     int number;
+	     int zeros = 0;
+	     int odds = 0;
+	     int even = 0;
+
+	     System.out.println("Please enter " + N +" integers, positive, " + "negative, or zeros.");
+	     for (counter = 1; counter <=N; counter++){
+	     number = console.nextInt();
+	     System.out.print(number + " ");
+
+	     switch(number%2){
+	     case 0:
+		 even++;
+		 if(number == 0)
+		    zeros++;
+		 break;
+             case 1:
+	     case -1:
+		odds++;
+  }
+}
+	System.out.println();
+	System.out.println("There are " + even + " even, " + "which also includes " + zeros + " zeros");
+	System.out.println("Total number of odd is: " + odds);
+   }
+}
+
+4.4
+C:\myJavaProgs>java Count2
+Please enter 10 integers, positive, negative, or zeros.
+1
+1 2
+2 3
+3 4
+4 5
+5 6
+6 7
+7 8
+8 9
+9 18
+18
+There are 5 even, which also includes 0 zeros
+Total number of odd is: 5
+
+5.4
+
+C:\myJavaProgs>java Accum
+Input integer number: 27
+Input integer number: 13
+Input integer number: 45
+Input integer number: 77
+Input integer number: 88
+Input integer number: 99
+Input integer number: 10
+Input integer number: 11
+Input integer number: 21
+Input integer number: 16
+The sum of the integers is 407
+
+5.5 the sum of all the integers being encoded
+
+6.1
+import java.util.*;
+ public class Accum2{
+     static Scanner console = new Scanner(System.in);
+     static final int N = 10;
+      public static void main (String[] args){
+             int counter;
+	     int number;
+	     int zeros = 0;
+	     int odds = 0;
+	     int even = 0;
+	     int sumeven = 0;
+	     int sumodd = 0;
+	     String input = "";
+
+	     System.out.println("Please enter " + N +" integers, positive, " + "negative, or zeros.");
+	     for (counter = 1; counter <=N; counter++){
+	     number = console.nextInt();
+	     System.out.print(number + " ");
+	   
+
+	     switch(number%2){
+	     case 0:
+		 even++;
+		 if(number == 0)
+		    zeros++;
+	     sumeven = sumeven + number;
+	     System.out.println("The sum of even numbers are: " + sumeven); 
+		 break;
+             case 1:
+	     case -1:
+		odds++;
+	     sumodd = sumodd + number;
+	     System.out.println("The sum of odd numbers are: " + sumodd);
+  }
+}
+	System.out.println();
+	System.out.println("There are " + even + " even, " + "which also includes " + zeros + " zeros");
+	System.out.println("Total number of odd is: " + odds);
+   }
+}
+	 
+6.4
+C:\myJavaProgs>java Accum2
+Please enter 10 integers, positive, negative, or zeros.
+10
+10 The sum of even numbers are: 10
+12
+12 The sum of even numbers are: 22
+13
+13 The sum of odd numbers are: 13
+14
+14 The sum of even numbers are: 36
+15
+15 The sum of odd numbers are: 28
+27
+27 The sum of odd numbers are: 55
+20
+20 The sum of even numbers are: 56
+17
+17 The sum of odd numbers are: 72
+45
+45 The sum of odd numbers are: 117
+34
+34 The sum of even numbers are: 90
+
+There are 5 even, which also includes 0 zeros
+Total number of odd is: 5
+
+6.5
+An accumulator is a register for short-term, 
+intermediate storage of arithmetic and logic data in a computer's 
+CPU (central processing unit). ... 
+In a modern computers, any register can function as an accumulator. 
+The most elementary use 
+for an accumulator is adding a sequence of numbers.
+
+7.
+Accumulators are identical to counters with one difference. While they must 
+have both an initial value and an incremental value; the incremental value is 
+determined by a variable. Accumulators are used to keep a running total of 
+numbers during successive passes through a loop.
+
+
+

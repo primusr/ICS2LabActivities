@@ -1,0 +1,111 @@
+3.4 input a number from 1 to 7:
+    5
+    The day is friday!
+    have a nice day.
+
+4.1 input a number from 1 to 7:
+    10
+    Imvalid input!!
+    have a nice day!!
+
+4.3 input a number from 1 to 7:
+    2
+    The day is tuseday
+    The day is wednesday!
+    have a nice day!!
+ the effect is it will display the next case becouse we remove break.
+
+4.5 no there's error in it.
+    yes, it matter becouse you can't get right answer if you don't
+
+4.6 no there is no
+    there is no change at all
+5. 1 
+   Input value from 1 to 12
+   1
+   1st Quarter
+5.2  i think it is switch case becouse if-else statement take too much time 
+    than using switch.
+ 
+
+
+program code:
+
+ import java.io.*;
+public class Quarter{
+public static void main(String[] args){
+
+int months ;
+String input=" ";
+BufferedReader in= new BufferedReader(new InputStreamReader(System.in));
+
+
+
+System.out.println("imput months 1 to 12: " );
+
+try{
+input=in.readLine();
+}catch(IOException e){
+System.out.println("error: ");
+}
+
+months =Integer.parseInt(input);
+
+switch(months){
+case 1 : 
+case 2 : 
+case 3 :
+System.out.println("1st quarter");
+break;
+case 4 : 
+case 5 : 
+case 6 : 
+System.out.println("2nd quarter");
+break;
+case 7 : 
+case 8 : 
+case 9 : 
+System.out.println("3rd quarter");
+break;
+case 10 : 
+case 11 : 
+case 12 : 
+System.out.println("4th quarter");
+break;
+}
+}
+}
+
+
+program code: if statement 
+
+ import java.io.*;
+public class Quarter{
+public static void main(String[] args){
+
+int months ;
+String input=" ";
+BufferedReader in= new BufferedReader(new InputStreamReader(System.in));
+
+try{
+input=in.readLine();
+}catch(IOException e){
+System.out.println("error: ");
+}
+months =Integer.parseInt(input);
+
+if(months==1||months==2||months==3){
+System.out.println("1st quarter");
+}
+
+if(months==4||months==5||months==6){
+System.out.println("2nd quarter");
+}
+
+if(months==4||months==5||months==6){
+System.out.println("3rd quarter");
+}
+System.out.println("4th quarter");
+
+}
+}

@@ -1,0 +1,164 @@
+3.4
+
+Input integer number: 90
+Input integer number: 5
+Input integer number: 4
+Input integer number: 60
+Input integer number: 10
+Input integer number: 3
+Input integer number: -8
+Input integer number: -88
+Input integer number: 0
+Input integer number: -40
+The total value for counter is 7
+
+**
+
+3.5
+
+The program counts the number of positive integers from the user's input.
+
+**
+
+4.1
+
+import java.io.*;
+
+public class Count2{
+	public static void main (String[] args){
+		int i, n, ctr;
+		String input = " ";
+		ctr = 0;
+		
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+		for (i = 1; i <= 10; i++){
+			System.out.print("Input integer number: ");
+			try{
+				input = in.readLine();
+			}catch(IOException e){
+				System.out.println("Error!");
+			}
+
+			n = Integer.parseInt(input);
+
+			if (n % 2 == 0){
+				ctr = ctr + 1;
+			} 
+		}
+		
+		System.out.println("The total number of EVEN INTEGERS is " + ctr);
+		System.out.println("The total number of ODD INTEGERS is " + (10 - ctr));
+		
+	}
+}
+
+
+**
+
+4.4
+
+Input integer number: 1
+Input integer number: 3
+Input integer number: 5
+Input integer number: 7
+Input integer number: 9
+Input integer number: 2
+Input integer number: 4
+Input integer number: 6
+Input integer number: 8
+Input integer number: 10
+The total number of EVEN INTEGERS is 5
+The total number of ODD INTEGERS is 5
+
+**
+
+4.5
+
+The purpose of counter is to count the number of instances a condition is satisfied.
+
+**
+
+5.4
+
+Input integer number: 20
+Input integer number: 13
+Input integer number: 17
+Input integer number: 5
+Input integer number: 2
+Input integer number: 91
+Input integer number: 43
+Input integer number: 61
+Input integer number: 50
+Input integer number: 10
+The sum of the integers is 312
+
+**
+
+5.5 
+
+The program accumulates the sum of the values while being inputted by the user.
+
+**
+
+6.1
+
+import java.io.*;
+
+public class Accum2{
+	public static void main(String[] args){
+		int i, n, sumEven = 0, sumOdd = 0;
+		String input = "";
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+		for (i = 0; i < 10; i++){
+			System.out.print("Input integer number: ");
+
+			try {
+				input = in.readLine();
+			} catch(IOException e) {
+				System.out.println("Error!");
+			}
+
+			n = Integer.parseInt(input);
+
+			if (n % 2 == 0) {
+				sumEven = sumEven + n;
+			} else {
+				sumOdd = sumOdd + n;
+			}
+		}
+		System.out.println("The sum of the EVEN INTEGERS is " + sumEven);
+		System.out.println("The sum of the ODD INTEGERS is " + sumOdd);
+	}
+}	
+
+
+**
+
+6.4
+
+Input integer number: 1
+Input integer number: 3
+Input integer number: 5
+Input integer number: 7
+Input integer number: 9
+Input integer number: 2
+Input integer number: 4
+Input integer number: 6
+Input integer number: 8
+Input integer number: 10
+The sum of the EVEN INTEGERS is 30
+The sum of the ODD INTEGERS is 25
+
+**
+
+6.5
+	
+The purpose of the accumulator is to hold the values while a new value is added to the variable every loop.
+
+**
+
+7
+	
+The difference of counters and accumulators is that counters are used for counting  instances/times a condition is satisfied. On the other hand, accumulators, are used to store values while a new value is added every loop.

@@ -1,0 +1,35 @@
+Midterm Laboratory Activity 2
+
+Name : rahom 
+
+----------------------
+
+3.4: 
+Input a number from 1 to 7: 2
+The day is a Tuesday!
+Have a Nice Day.
+------------
+4.2:
+Input a number from 1 to 7: 8
+Invalid Input!!!
+Have a Nice Day.
+------------
+4.3:
+Input a number from 1 to 7: 2
+The day is a Tuesday!
+The day is a Wednesday!
+Have a Nice Day.
+
+-The Break Statement Stops the next case from showing with/after the inputed case
+----------------------------
+4.5:
+Yes
+No 
+----
+4.6:
+Yes
+Yes
+-----
+5:
+
+

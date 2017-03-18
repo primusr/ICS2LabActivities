@@ -1,0 +1,147 @@
+Answers PWMLA03
+
+3.4)
+input Starting Number: 1
+input ending Number: 2
+Sum = 1
+
+4.1)
+input Starting Number: 1
+input ending Number: 2
+Sum = 1
+
+5.1)
+input Starting Number: 1
+input ending Number: 2
+Sum = 1
+
+6)
+to determine the difference between the 3 loop control structures
+
+7)
+do... while loop
+for loop
+while loop
+
+8)
+all functions executes the file repeatedly until the condition is satisfied
+
+9)
+do while loop
+because it is the only one that the condition to be satisfied is after the functions
+
+
+10.4)
+//do while loop
+import java.util.Scanner;
+public class DoWhileEwan{
+public static void main(String[] args){
+	Scanner user_input = new Scanner(System.in);
+	int start, end, step, i;
+	String yn = "";
+	start = 0;
+	end = 0;
+	step = 0;
+	
+	do{
+	System.out.println("Input START value");
+	start = user_input.nextInt();
+	System.out.println("Input END value");
+	end = user_input.nextInt();
+	System.out.println("Input STEP value");
+	step = user_input.nextInt();
+	
+	if(end < start){
+		System.out.println("the end should be greater than the start");
+	}else if(end < 0){
+		System.out.println("the step should be greater than 0");
+	}
+		do{
+		System.out.print(start);
+		System.out.print("\n");
+		start = start + step;
+		}while(start <= end);
+		
+	System.out.println("do you want to try again");
+	yn = user_input.next();
+	}while(yn.equals("Y") || yn.equals("y"));
+		
+		
+	
+}
+}
+
+
+//using for loop
+import java.util.Scanner;
+public class Forewan{
+public static void main(String[] args){
+	Scanner user_input = new Scanner(System.in);
+	int start, end, step, i;
+	String yn = "";
+	start = 0;
+	end = 0;
+	step = 0;
+	
+	do{
+	System.out.println("Input START value");
+	start = user_input.nextInt();
+	System.out.println("Input END value");
+	end = user_input.nextInt();
+	System.out.println("Input STEP value");
+	step = user_input.nextInt();
+	
+	if(end < start){
+		System.out.println("the end should be greater than the start");
+	}else if(end < 0){
+		System.out.println("the step should be greater than 0");
+	}
+		for(i=start; start <= end; start = start + step){
+		System.out.print(start);
+		System.out.print("\n");
+	}
+		System.out.println("do you want to try again");
+		yn = user_input.next();
+	}while(yn.equals("Y") || yn.equals("y"));
+}
+}
+
+//while loop
+
+import java.util.Scanner;
+public class Whileewan{
+public static void main(String[] args){
+	Scanner user_input = new Scanner(System.in);
+	int start, end, step, i;
+	String yn = "";
+	start = 0;
+	end = 0;
+	step = 0;
+	
+	do{
+	System.out.println("Input START value");
+	start = user_input.nextInt();
+	System.out.println("Input END value");
+	end = user_input.nextInt();
+	System.out.println("Input STEP value");
+	step = user_input.nextInt();
+	
+	if(end < start){
+		System.out.println("the end should be greater than the start");
+	}else if(end < 0){
+		System.out.println("the step should be greater than 0");
+	}
+		i = start;
+		while(start <= end){										
+		System.out.print(start);
+		System.out.print("\n");
+		start = start + step;
+		}
+		System.out.println("do you want to try again");
+		yn = user_input.next();
+	}while(yn.equals("Y") || yn.equals("y"));
+}
+}
+
+
+

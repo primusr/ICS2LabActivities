@@ -1,0 +1,131 @@
+3.4.
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+Input integer number: 1
+The total value for counter is 10
+3.5.
+frequency(count)of a certain group of items
+4.1.
+/* Programmed by: Gapuz,Rafael N.
+Program title: Count2.java
+Program Date: March 2 ,2017 */
+import java.io.*;
+public class Count2{
+public static void main(String[] args){
+	int i,n,ctr,o_ctr,e_ctr,sum;
+	o_ctr=0;
+	e_ctr=0;
+	sum=0;
+	String input = "";
+	ctr = 0;
+	BufferedReader in = new BufferedReader(new
+	InputStreamReader(System.in));
+	for(i = 1; i<=10; i++){
+		System.out.print("Input integer number: ");
+	try{
+		input = in.readLine();
+	}catch(IOException e){
+	System.out.print("Error!");
+	}	
+	n = Integer.parseInt(input);
+	if(n%2==0){
+		e_ctr = e_ctr + n;
+	}
+	else{
+		o_ctr = o_ctr + n;
+	}
+	}
+System.out.println("The total value for EVEN counter is " + e_ctr);
+System.out.println("The total value for  ODD counter is " + o_ctr);
+}
+}
+4.4.
+Input integer number: 1
+Input integer number: 2
+Input integer number: 3
+Input integer number: 4
+Input integer number: 5
+Input integer number: 6
+Input integer number: 7
+Input integer number: 8
+Input integer number: 9
+Input integer number: 10
+The total value for EVEN counter is 30
+The total value for  ODD counter is 25
+4.5.
+it is used to count how many pieces of data/entries needed to read.
+5.4.
+Input integer number: 1
+Input integer number: 2
+Input integer number: 3
+Input integer number: 4
+Input integer number: 5
+Input integer number: 6
+Input integer number: 7
+Input integer number: 8
+Input integer number: 9
+Input integer number: 10
+The sum of the integers is 55
+5.5.
+the data or entries that you entered.
+6.1.
+/* Programmed by: Gapuz,Rafael N.
+Program title: Accum2.java
+Program Date: March 2 ,2017 */
+import java.io.*;
+public class Accum2{
+	public static void main(String[] args){
+		int n,i,ctr,o_ctr,e_ctr; 
+		e_ctr =0;
+		o_ctr =0;
+		ctr = 0 ;
+		String input = "";
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		for(i = 0; i<10; i++){
+			System.out.print("Input integer number: ");
+			try{
+				input = in.readLine();
+			}catch(IOException e){
+				System.out.println("Error!");
+			}
+			n = Integer.parseInt(input);
+			if(n%2==0){
+				e_ctr = e_ctr + n;
+			}
+			else{
+				o_ctr = o_ctr + n;
+			}
+			}
+	System.out.println("The total value for EVEN counter is " + e_ctr );
+	System.out.println("The total value for ODD counter is " + o_ctr ) ;
+	
+	}
+	}
+	
+6.4.
+Input integer number: 1
+Input integer number: 2
+Input integer number: 3
+Input integer number: 4
+Input integer number: 5
+Input integer number: 6
+Input integer number: 7
+Input integer number: 8
+Input integer number: 9
+Input integer number: 10
+The total value for EVEN counter is 30
+The total value for ODD counter is 25
+6.5.
+it is use to keep track of the
+accumulated value of a certain group of items.
+7.
+counters are used to count the data/entries that 
+your entered while accumulators are use to to keep track of the
+accumulated value of a certain group of items.

@@ -1,0 +1,46 @@
+MOJZESZ REDD DAMIAN
+MIDTERM ACTIVITY 3
+
+3.2. Save the program as Sum1.java then compile your program until
+no errors and warnings are reported.
+3.3. Run your program.
+3.4. Simulate and write what will be displayed on the screen.
+	- Input Starting number: 1
+	  Input Ending number : 5
+	  Sum = 9
+
+4.1. Simulate and write what will be displayed on the screen. Try using
+the same input values in your Sum1.java
+	- Input Starting number: 1
+	  Input Ending number : 5
+	  Sum = 9
+
+5.1. Simulate and write what will be displayed on the screen. Try using
+the same input values in your Sum1.java and Sum2.java
+	- Input Starting number: 1
+	  Input Ending number : 5
+	  Sum = 9
+6. After your simulation for the three programs, what do you think is the main
+objective of these programs?
+	 - To compute the sum of the numbers in between the starting number and the ending number.
+
+7. Identify what are the different loop control structures in Java.
+	- For Loop , While Loop , and Do-while Loop.
+
+8. What are the usual similar components of these loop-constructs?
+	-All loops perform the code repeatedly as long as the condition that is being evaluated is true.
+
+9. What do you think is different among these identified loop constructs?
+Justify your answer.
+	- While Loop checks for the condition first, so if the condition is false it will not enter the loop
+	- For Loop will execute the statement every iteration in the loop.
+	-  Do-while Loop execute the statements first before checking the condition.
+
+10.Create a complete Java program that shall allow the user to accept three
+integer values representing the START, END, and STEP respectively. The
+START should always be lesser than the END value, and the STEP is
+always greater than zero. The program shall print vertically the values
+starting from the START to the last value which can be equal to or lesser
+than the END incremented by the STEP value.
+
+	// Using while Loop
