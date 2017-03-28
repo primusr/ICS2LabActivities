@@ -1,0 +1,24 @@
+FLBA02
+
+3.4
+
+Input table[0][0]= 1
+Input table[0][1]= 2
+Input table[0][2]= 3
+Input table[1][0]= 4
+Input table[1][1]= 5
+Input table[1][2]= 6
+Input table[2][0]= 7
+Input table[2][1]= 8
+Input table[2][2]= 9
+123
+456
+789
+
+3.5
+3.6
+3.7
+3.8
+3.9
+
+4.1
