@@ -1,0 +1,30 @@
+GAPUZ,RAFAEL N.
+FLAB01.
+3.4.List.java
+Input value for list[0] = 1
+Input value for list[1] = 2
+Input value for list[2] = 3
+Input value for list[3] = 4
+Input value for list[4] = 5
+Input value for list[5] = 6
+Input value for list[6] = 7
+Input value for list[7] = 8
+Input value for list[8] = 9
+Input value for list[9] = 10
+list[0] = 1list[1] = 2list[2] = 3list[3] = 4list[4] = 5list[5] = 6list[6] = 7list[7] = 8list[8] = 9list[9] = 10BUILD SUCCESSFUL (total time: 15 seconds)
+3.5.
+3.6.
+3.7.
+3.8.
+10
+3.9.
+at [0]
+3.10.
+at [9]
+4.1.List2.java
+4.4.
+5.1.revised List2.java(1)
+6.3.revised List2.java(2)
+6.4.
+7.1.Bubblesort.java
+7.4.

@@ -1,0 +1,73 @@
+3.4
+ 
+Input value for list[0] = 1
+Input value for list[1] = 2
+Input value for list[2] = 3
+Input value for list[3] = 4
+Input value for list[4] = 5
+Input value for list[5] = 6
+Input value for list[6] = 7
+Input value for list[7] = 8
+Input value for list[8] = 9
+Input value for list[9] = 10
+list[0] = 1
+list[1] = 2
+list[2] = 3
+list[3] = 4
+list[4] = 5
+list[5] = 6
+list[6] = 7
+list[7] = 8
+list[8] = 9
+list[9] = 10
+------
+-------------------------------------------------
+
+3.5
+
+A for loop has the for keyword, followed by parentheses containing three optional expressions separated by semicolons, followed by a body which executes in each iteration of the loop.
+
+The goal of the for loop in your example is to set the value of count, which will be compared to zahl in the if statement that follows. This is achieved in the semicolon-delimit 
+ed expressions, so the loop body doesn't need to do anything.
+ -----------------------------------------------------------------------------------------------------------------------------------
+
+3.6
+
+m disappointed in this section because I don't think enough of the "why" was explained in relation to the construction of the for loop. As someone brand new to programming I don't think too much should be left for me to just intuit and figure out, I need more guidance and explanation.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3.7  
+
+
+ loops are less efficient than vectorized solutions that make use of apply functions, such as lapply and sapply. It’s often better to use the latter
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+3.8 elements : 1 ,2,3,4,5,6,7,8,9,10,
+ 
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+ 3.9 
+
+
+ 
+
+ -----------------------------------------------------------------
+3.10
+
+
+
+
+ -------------------------------------------------------------------
+ 
+ 
+
+
+
+
+
+
+------------------------------------------------------------------
